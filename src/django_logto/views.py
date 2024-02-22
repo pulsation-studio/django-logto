@@ -3,7 +3,7 @@ import os
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import View
 
-from logto_init import start_logto_client
+from .logto_init import start_logto_client
 
 
 class SigninView(View):

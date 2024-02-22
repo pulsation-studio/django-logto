@@ -2,10 +2,10 @@ from django.http import HttpRequest
 from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
 
-from django_logto_client import DjangoLogtoClient
-from logto_init import start_logto_client
-from models import LogtoUser
-from utils import get_authenticated_logto_user, get_authorization_header, decode_token
+from .django_logto_client import DjangoLogtoClient
+from .logto_init import start_logto_client
+from .models import LogtoUser
+from .utils import get_authenticated_logto_user, get_authorization_header, decode_token
 
 
 class LogtoAuthentication(BaseAuthentication):

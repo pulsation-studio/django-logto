@@ -1,11 +1,9 @@
-import os
-
 from asgiref.sync import async_to_sync, sync_to_async
-from django.http import HttpRequest
 from django.conf import settings
+from django.http import HttpRequest
 from logto import Storage, LogtoConfig
 
-from django_logto_client import DjangoLogtoClient
+from .django_logto_client import DjangoLogtoClient
 
 
 class SessionStorage(Storage):

@@ -47,8 +47,8 @@ LOGTO_ADMIN_CLIENT_SECRET="**<your_m2m_app_secret>**"
 You will need to give your M2M app the permission to access to ManagementAPI (don't forget to set the role as "Machine-to-machine app role"): \
 https://docs.logto.io/docs/recipes/rbac/manage-permissions-and-roles/#create-and-define-a-new-role 
 
-> This package also expects (by default) to receive an "admin" role from the managementAPI to give the user the right to access the admin console by creating a role with name="admin" (don't forget to set the role as "User role"). \
-> You can override it by defining another admin tags in settings.py: \
+This package also expects (by default) to receive an "admin" role from the managementAPI to give the user the right to access the admin console by creating a role with name="admin" (don't forget to set the role as "User role"). \
+You can override it by defining another admin tags in settings.py: \
 ```python
 LOGTO_ADMIN_TAG=["<1st_admin_tag>","<2nd_admin_tag>","etc"]
 ```

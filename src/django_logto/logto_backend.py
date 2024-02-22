@@ -1,9 +1,9 @@
 from django.contrib.auth.backends import BaseBackend
 from rest_framework.exceptions import PermissionDenied
 
-from logto_init import start_logto_client
-from models import LogtoUser
-from utils import get_authenticated_logto_user, is_user_admin, get_or_create_admin
+from .logto_init import start_logto_client
+from .models import LogtoUser
+from .utils import get_authenticated_logto_user, is_user_admin, get_or_create_admin
 
 
 class LogtoBackend(BaseBackend):

@@ -4,8 +4,8 @@ import requests
 from asgiref.sync import async_to_sync
 from django.conf import settings
 from django.http import HttpRequest
-from django_logto_client import DjangoLogtoClient
-from models import LogtoUser
+from .django_logto_client import DjangoLogtoClient
+from .models import LogtoUser
 from jose import jwt
 from logto.models.response import UserInfoResponse
 from rest_framework.exceptions import AuthenticationFailed, APIException
