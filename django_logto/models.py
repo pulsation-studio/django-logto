@@ -3,4 +3,4 @@ from django.db import models
 
 
 class LogtoUser(AbstractUser):
-    sub = models.CharField()
+    sub = models.CharField(max_length=20)
